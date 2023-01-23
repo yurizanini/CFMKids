@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cfmkids-dev-113004-authRole",
+      "UnauthRoleArn": "arn:aws:iam::149366707167:role/amplify-cfmkids-dev-113004-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::149366707167:role/amplify-cfmkids-dev-113004-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-cfmkids-dev-113004-deployment",
+      "UnauthRoleName": "amplify-cfmkids-dev-113004-unauthRole",
+      "StackName": "amplify-cfmkids-dev-113004",
+      "StackId": "arn:aws:cloudformation:us-west-2:149366707167:stack/amplify-cfmkids-dev-113004/a03598e0-99b9-11ed-8c7f-02c68d31a0f5",
+      "AmplifyAppId": "d3uh7opy8yk11c"
+    },
+    "categories": {
+      "auth": {
+        "cfmkidsd43804bd": {}
+      }
+    }
+  }
+}
