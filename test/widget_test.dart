@@ -1,30 +1,28 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:cfmkids/main.dart';
 
+// TODO: Add test cases for Sign up button
+// TODO: Add test cases to see if images displayed correctly
+// TODO: Add test cases to see if the layout is centered and correctly displaying padding and spacing
+// TODO: Add test cases to verify colors and texts for buttons
+// TODO: Add test cases to verify the app against different screen sizes and orientations
+
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+  testWidgets('Login button test', (WidgetTester tester) async {
+    // Build the widget
+    await tester.pumpWidget(const MaterialApp(home: HomePage()));
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    //Verify that the Login button is displayed
+    final loginBtn = find.byKey(const Key('loginBtn'));
+    expect(loginBtn, findsOneWidget);
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+    // Tap the Login button
+    await tester.tap(loginBtn);
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Verify that the login button was pressed by checking for an action
+    expect(find.byType(SnackBar), findsOneWidget);
   });
 }
