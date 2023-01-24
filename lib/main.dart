@@ -95,7 +95,7 @@ class HomePage extends StatelessWidget {
                 ))));
   }
 }
-class Pagetwo extends MaterialPageRoute<Null> {
+class Pagetwo extends MaterialPageRoute<void> {
   Pagetwo()
       : super(builder: (BuildContext context) {
     return Scaffold(
