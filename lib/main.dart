@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'mainpage.dart';
+
 void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -40,6 +42,7 @@ class HomePage extends StatelessWidget {
                             minWidth: double.infinity,
                             height: 60,
                             onPressed: () {
+                              Navigator.push(context, MainPage());
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
                                   content: Text("Login Button Pressed"),
@@ -94,3 +97,4 @@ class HomePage extends StatelessWidget {
                 ))));
   }
 }
+
