@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
                             minWidth: double.infinity,
                             height: 60,
                             onPressed: () {
-                              Navigator.push(context, mainpage());
+                              Navigator.push(context, MainPage());
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
                                   content: Text("Login Button Pressed"),

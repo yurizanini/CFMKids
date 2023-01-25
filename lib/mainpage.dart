@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-class  mainpage extends MaterialPageRoute<void> {
-  mainpage()
+class  MainPage extends MaterialPageRoute<void> {
+  MainPage()
       : super(builder: (BuildContext context) {
     return Scaffold(
       appBar: AppBar(
