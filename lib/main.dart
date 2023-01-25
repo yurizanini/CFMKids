@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'mainpage.dart';
+
 void main() {
   runApp(const MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -40,7 +42,7 @@ class HomePage extends StatelessWidget {
                             minWidth: double.infinity,
                             height: 60,
                             onPressed: () {
-                              Navigator.push(context, Pagetwo());
+                              Navigator.push(context, mainpage());
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
                                   content: Text("Login Button Pressed"),
@@ -95,41 +97,4 @@ class HomePage extends StatelessWidget {
                 ))));
   }
 }
-class Pagetwo extends MaterialPageRoute<void> {
-  Pagetwo()
-      : super(builder: (BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Main Page'),
-  actions: <Widget>[
-          PopupMenuButton<String>(
-            onSelected: handleClick,
-            itemBuilder: (BuildContext context) {
-              return {'Logout', 'Settings'}.map((String choice) {
-                return PopupMenuItem<String>(
-                  value: choice,
-                  child: Text(choice),
-                );
-              }).toList();
-            },
-          ),
-        ],
-      ),
-        
-      
-      body: const Center(
-        child: Text(
-          'This will be the main page',
-          style: TextStyle(fontSize: 24),
-        ),
-      ),
-    );
-  });
-}void handleClick(String value) {
-    switch (value) {
-      case 'Logout':
-        break;
-      case 'Settings':
-        break;
-    }
-}
+
