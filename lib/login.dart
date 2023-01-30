@@ -1,6 +1,9 @@
+import 'package:cfmkids/mainpage.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,6 +76,7 @@ class LoginPage extends StatelessWidget {
                                 minWidth: double.infinity,
                                 height: 60,
                                 onPressed: () {
+                                  Navigator.push(context, MainPage());
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
                                       content: Text("Login Button Pressed"),
