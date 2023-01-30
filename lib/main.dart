@@ -1,9 +1,11 @@
+import 'package:cfmkids/login.dart';
+import 'package:cfmkids/signup.dart';
 import 'package:flutter/material.dart';
 
 import 'mainpage.dart';
 
 void main() {
-  runApp(const MaterialApp(
+  runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     home: HomePage(),
   ));
@@ -96,7 +98,10 @@ class _MyHomePageState extends State<MyHomePage> {
                             minWidth: double.infinity,
                             height: 60,
                             onPressed: () {
-                              Navigator.push(context, MainPage());
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: ((context) => LoginPage())));
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
                                   content: Text("Login Button Pressed"),
@@ -118,17 +123,17 @@ class _MyHomePageState extends State<MyHomePage> {
                             padding: const EdgeInsets.only(top: 3, left: 3),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
-                              //border: const Border(
-                              //  bottom: BorderSide(color: Colors.black),
-                              //  top: BorderSide(color: Colors.black),
-                              //  left: BorderSide(color: Colors.black),
-                              //  right: BorderSide(color: Colors.black),)
                             ),
                             child: MaterialButton(
                                 key: const Key('signupBtn'),
                                 minWidth: double.infinity,
                                 height: 60,
                                 onPressed: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: ((context) =>
+                                              SignupPage())));
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
                                       content: Text("Sign Up Button Pressed"),
