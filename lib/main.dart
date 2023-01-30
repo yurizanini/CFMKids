@@ -53,8 +53,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final int _counter = 0;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -120,7 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       context,
                                       MaterialPageRoute(
                                           builder: ((context) =>
-                                              SignupPage())));
+                                              const SignupPage())));
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
                                       content: Text("Sign Up Button Pressed"),
