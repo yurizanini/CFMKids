@@ -86,7 +86,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: ((context) => LoginPage())));
+                                      builder: ((context) =>
+                                          const LoginPage())));
                               ScaffoldMessenger.of(context).showSnackBar(
                                 const SnackBar(
                                   content: Text("Login Button Pressed"),
