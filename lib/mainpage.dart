@@ -68,11 +68,28 @@ class _HomeScreenState extends State<HomeScreen> {
           unselectedItemColor: Colors.grey,
           onTap: onTapped,
         ),
-        body: const Center(
-          child: Text(
-            'This will be the main page',
-            style: TextStyle(fontSize: 24),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [Container(
+            width: 200,
+            height: 200,
+            color: Colors.red,
+             child: Image.asset ('assets/images/terere.jpg'),),
+          
+          
+          Container(
+            width: 200,
+            height: 200,
+            color: Colors.green,
           ),
-        ));
+          Container(
+            width: 200,
+            height: 200,
+            color: Colors.blue,
+          ),
+        
+      
+        ],));
   }
 }
