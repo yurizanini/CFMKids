@@ -2,16 +2,8 @@ import 'package:cfmkids/login.dart';
 import 'package:cfmkids/signup.dart';
 import 'package:flutter/material.dart';
 
-<<<<<<< Updated upstream
 void main() {
   runApp(const MaterialApp(
-
-=======
-
-
-void main() {
-  runApp(const MaterialApp(
->>>>>>> Stashed changes
     debugShowCheckedModeBanner: false,
     home: HomePage(),
   ));
@@ -126,12 +118,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-<<<<<<< Updated upstream
                                           builder: ((context) =>
                                               const SignupPage())));
-=======
-                                          builder: ((context) => SignupPage())));
->>>>>>> Stashed changes
                                   ScaffoldMessenger.of(context).showSnackBar(
                                     const SnackBar(
                                       content: Text("Sign Up Button Pressed"),

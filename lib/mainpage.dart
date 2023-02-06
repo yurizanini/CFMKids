@@ -72,21 +72,23 @@ class _HomeScreenState extends State<HomeScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [Container(
-            width: 200,
+           width: 100,
             height: 200,
-            color: Colors.red,
-             child: Image.asset ('assets/images/terere.jpg'),),
-          
+            padding: const EdgeInsets.all(5.0),
+                       child: Image.asset('assets/images/terere.jpg'),
+          ),
           
           Container(
-            width: 200,
+            width: 100,
             height: 200,
-            color: Colors.green,
+            padding: const EdgeInsets.all(5.0),
+                       child: Image.asset('assets/images/terere.jpg'),
           ),
           Container(
-            width: 200,
+             width: 100,
             height: 200,
-            color: Colors.blue,
+            padding: const EdgeInsets.all(5.0),
+                       child: Image.asset('assets/images/terere.jpg'),
           ),
         
       
