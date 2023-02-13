@@ -31,7 +31,6 @@ class HomePage extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: SplashScreen(),
-      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
