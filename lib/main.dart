@@ -1,3 +1,4 @@
+import 'package:cfmkids/splashscreen.dart';
 import 'package:cfmkids/login.dart';
 import 'package:cfmkids/signup.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: SplashScreen(),
     );
   }
 }
